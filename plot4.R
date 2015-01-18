@@ -5,7 +5,7 @@ data <- read.csv(dataFile, sep=";", stringsAsFactors=FALSE, na.strings = c("?", 
 data <- data[data$Date %in% c("1/2/2007","2/2/2007"), ]
 data$DateTime <- as.POSIXlt(paste(data$Date, data$Time), format="%d/%m/%Y %H:%M:%S")
 
-png(file = "~/Coursea/DataScience/ExploreAna/plot4.png")
+png(file = "plot4.png")
 par(mfrow = c(2,2))
 
 # Plot 1
